@@ -1,0 +1,142 @@
+@import url(../main.css);
+
+/* header: */
+header {
+    padding: 30px 40px;
+    color: whitesmoke;
+}
+
+header,
+footer {
+    background-image: var(--bg-img);
+}
+
+header,
+header .headerText,
+header ul,
+header ul li,
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* h1 */
+header .headerText h1 {
+    text-align: center;
+    font-size: clamp(2.813rem, 4.679vw, 5rem);
+    font-weight: bold;
+    text-shadow: 3px 3px var(--brown);
+}
+
+header .headerText p,
+.notes p {
+    display: block;
+    text-align: justify;
+}
+
+header .headerText p,
+header ul,
+.notes {
+    font-size: clamp(1.438rem, 1.738vw, 1.75rem);
+}
+
+/* ul */
+header ul {
+    padding: 0px 2.005vw;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li::before {
+    content: '';
+    width: 0.3em;
+    height: 0.3em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -18px;
+    top: 0.5em;
+}
+
+
+header ul span,
+.notes p {
+    font-weight: bold;
+}
+
+/* cards */
+header ul .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, clamp(60px, 6.684vw, 100px));
+    gap: 15px;
+}
+
+/* card */
+header ul .cards .card {
+    width: clamp(60px, 6.684vw, 100px);
+    height: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+header ul .cards .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.notes {
+    margin-top: 20px;
+}
+
+.notes p {
+    text-decoration: underline;
+    color: rgb(110, 4, 4);
+}
+
+
+/* footer */
+footer .arrows{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 25px;
+}
+
+footer i{
+    color: var(--light-green);
+    font-size: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: var(--gold);
+}
+
+footer .leftArrow{
+    transform: rotate(180deg);
+}
+
+@media (max-width: 609px){
+    header .headerText h1{
+        text-align: left;
+    }
+}
+
+

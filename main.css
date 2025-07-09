@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('./fonts/Aptos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-bg-img :  url("./img/BlackJack.png");
+    --bg-img : url("../img/backGround.png");
+    --game-img: url("../img/gameBackGround.png");
+    --light-green:  #90A891;
+    --dark-green: #0D3512;
+    --gold:  #CA9F43;
+    --brown: #774206;
+}
+
+body {
+    font-family: 'Aptos', sans-serif, 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+
+}
+
+
+/* header: */
+header {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* footer */
+footer{
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+    bottom: 0;
+    box-shadow: 1px 1px 8px 0px #989393;
+}

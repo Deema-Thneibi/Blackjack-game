@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack Game</title>
+  <link rel="icon" type="image/png" href="../img/chip.png">
+
+  <!-- link to font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Link to the css file -->
+  <link rel="stylesheet" href="./howToPlay.css" />
+</head>
+
+<body>
+
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- headerText -->
+      <div class="headerText">
+        <h1> How to Play Blackjack </h1>
+        <p>Try to beat the dealer by getting a hand value as close to 21 as possible without going over.</p>
+      </div>
+
+      <!-- gameSteps -->
+      <div class="gameSteps">
+        <h2>Gameplay Steps</h2>
+        <ol>
+          <li>You and the dealer each receive two cards. One of the dealer's cards is face up.</li>
+          <li>You decide whether to <strong>Hit</strong> (draw a card) or <strong>Stand</strong> (keep your hand).</li>
+          <li>If your total goes over 21, you bust and lose the round.</li>
+          <li>When you stand, the dealer reveals their hidden card and draws more cards until their total is 17 or
+            higher.</li>
+          <li>The winner is the one with the hand closer to 21 without going over.</li>
+        </ol>
+      </div>
+
+      <!-- Special Scenarios -->
+      <div>
+        <h2>Special Scenarios</h2>
+        <ul>
+          <li><strong>Blackjack:</strong> If you get 21 from your first two cards (Ace + 10/J/Q/K), you win immediately
+            — unless the dealer also has Blackjack, then it's a tie.</li>
+          <li><strong>Dealer's Blackjack:</strong> If the dealer has Blackjack and you don't, you lose instantly.</li>
+          <li><strong>Bust:</strong> If your hand value exceeds 21, you lose automatically.</li>
+          <li><strong>Dealer Bust:</strong> If the dealer exceeds 21, you win automatically.</li>
+          <li><strong>Push (Tie):</strong> If you and the dealer have the same total (21 or less), it's a tie and no one
+            wins or loses.</li>
+          <li><strong>Higher Hand Wins:</strong> If neither busts or has Blackjack, the hand closer to 21 wins.</li>
+        </ul>
+      </div>
+
+      <!-- tips -->
+      <div class="tips">
+        <h2>Tips</h2>
+        <ul>
+          <li>Always check the dealer's visible card before making a move.</li>
+          <li>If your hand is strong (like 18 or above), consider standing.</li>
+          <li>Remember, Ace is flexible — use it wisely!</li>
+        </ul>
+      </div>
+
+    </header>
+
+    <!-- footer -->
+    <footer>
+      <div class="arrows">
+        <a href="../cardValues/cardValues.html"><i class="fa-solid fa-play leftArrow"></i></a>
+        <a href="../game/game.html"><i class="fa-solid fa-play rightArrow"></i></a>
+      </div>
+
+    </footer>
+
+  </body>
+</body>
+
+</html>

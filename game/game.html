@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="icon" type="image/png" href="../img/chip.png">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./game.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Game title -->
+        <div class="headerText">
+            <h1>BLACKJACK</h1>
+        </div>
+
+        <!-- Player's score and cards -->
+        <div class="game">
+            <div class="player-dealer">
+                <div class="player">
+                    <p class="header">Player: <span>0</span></p>
+                    <div class="cards">
+                        <!-- Player's cards -->
+                    </div>
+
+                </div>
+
+                <!-- Dealer's score and cards -->
+                <div class="dealer">
+                    <p class="header">Dealer: <span>0</span></p>
+                    <div class="cards">
+                        <!-- Dealer's cards -->
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Game control buttons -->
+            <div class="buttons">
+                <div class="hitButton">
+                    <button>HIT</button>
+                </div>
+                <div class="standButton">
+                    <button>STAND</button>
+                </div>
+
+                <div class="dealButton">
+                    <button>DEAL</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Message area for game notifications (e.g. win/loss) -->
+        <div class="message">
+            <p></p>
+        </div>
+    </header>
+
+    <!-- Link to the JavaScript file that controls the game logic -->
+    <script type="module" src="./game.js"></script>
+</body>
+
+</html>

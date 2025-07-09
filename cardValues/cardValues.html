@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="icon" type="image/png" href="../img/chip.png">
+
+    <!-- link to font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- Link to the css file -->
+    <link rel="stylesheet" href="./cardValues.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- headerText -->
+        <div class="headerText">
+            <h1> Card Values in Blackjack </h1>
+            <p>Each card in Blackjack has a point value that adds to your total score. Here's how it works:</p>
+        </div>
+
+        <!-- card Values -->
+        <ul>
+            <li class="oneToTenCards">
+                <div><span>Number Cards (2–10):</span> Worth their face value.</div>
+                <div class="cards">
+                </div>
+            </li>
+
+            <li class="faceCards">
+                <div><span>Face Cards (J, Q, K):</span> Each is worth 10 points.</div>
+                <div class="cards">
+                </div>
+            </li>
+
+            <li class="aceCard">
+                <div><span>Ace (A):</span> Can be worth 1 or 11 points – depending on what helps your hand more.</div>
+                <div class="cards">
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="notes">
+            <p>Notes</p>
+            <ul>
+                <li>You’ll see these same cards when playing the game.</li>
+                <li>Knowing the values helps you decide when to Hit or Stand.</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- footer -->
+    <footer>
+        <div class="arrows">
+            <a href="../index/index.html"><i class="fa-solid fa-play leftArrow"></i></a>
+            <a href="../howToPlay/howToPlay.html"><i class="fa-solid fa-play rightArrow"></i></a>
+        </div>
+
+    </footer>
+
+    <!-- Link to the JavaScript file that controls the game logic -->
+    <script type="module" src="./cardValues.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@import url(../main.css);
+
+/* header: */
+header {
+    padding: 30px 40px;
+    color: whitesmoke;
+}
+
+header,
+footer {
+    background-image: var(--bg-img);
+}
+
+
+header,
+header .headerText,
+header div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* h1 */
+header .headerText h1 {
+    text-align: center;
+    font-size: clamp(2.813rem, 4.679vw, 5rem);
+    font-weight: bold;
+    text-shadow: 3px 3px var(--brown);
+}
+
+
+header .headerText p {
+    display: block;
+}
+
+header .headerText p,
+header h2 {
+    font-size: clamp(1.438rem, 1.738vw, 1.75rem);
+}
+
+/* li */
+header li {
+    font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+    margin-bottom: 7px;
+
+}
+
+/* ul && ol */
+header ul,
+header ol {
+    padding: 0px 2.2vw;
+}
+
+/* tips */
+.tips h2 {
+    text-decoration: underline;
+    color: rgb(110, 4, 4);
+}
+
+
+
+/* footer */
+footer .arrows {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 25px;
+}
+
+footer i {
+    color: var(--light-green);
+    font-size: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: var(--gold);
+}
+
+footer .leftArrow {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 609px) {
+    header .headerText h1 {
+        text-align: left;
+    }
+}
